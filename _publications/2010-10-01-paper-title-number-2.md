@@ -7,8 +7,6 @@ excerpt: 'This paper examines anthropometric measurements of children in nuclear
 date: 2020-04-01
 venue: 'Indian Journal of Economics'
 paperurl: 'https://drive.google.com/file/d/1v8IriWUkadASb5fl5qtLGk0uhpbYkuyh/view?usp=drivesdk'
-slidesurl: ''
-bibtexurl: ''
 citation: 'Sundaram, R., <b>Sharma, V.</b> & Saraswat, A. (2020). "Anthropometric Measurements for Children in Nuclear and Joint Families." <i>Indian Journal of Economics</i>, No. 399, Vol. C (Part-IV), April 2020: 533–546.'
 ---
 
