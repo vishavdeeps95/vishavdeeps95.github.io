@@ -1,14 +1,19 @@
 ---
-title: "Paper Title Number 2"
+title: "Anthropometric Measurements for Children in Nuclear and Joint Families"
 collection: publications
 category: manuscripts
-permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+permalink: /publication/2020-anthropometric-measurements
+excerpt: 'This paper examines anthropometric measurements of children in nuclear and joint families, analyzing variations across family structures.'
+date: 2020-04-01
+venue: 'Indian Journal of Economics'
+paperurl: 'https://drive.google.com/file/d/1v8IriWUkadASb5fl5qtLGk0uhpbYkuyh/view?usp=drivesdk'
+slidesurl: ''
+bibtexurl: ''
+citation: 'Sundaram, R., <b>Sharma, V.</b> & Saraswat, A. (2020). "Anthropometric Measurements for Children in Nuclear and Joint Families." <i>Indian Journal of Economics</i>, No. 399, Vol. C (Part-IV), April 2020: 533–546.'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+This study investigates **anthropometric measurements** (height, weight, BMI, and related indicators) of children across **nuclear** and **joint families**, exploring the influence of family structure on child growth outcomes.  
+Key findings include:
+- Significant differences in growth indicators between nuclear and joint family settings  
+- Socio‑economic factors contributing to observed variations  
+- Policy implications for child health and family welfare programs
