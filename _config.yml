@@ -4,7 +4,7 @@ site_theme               : "default"
 title                    : "Vishavdeep Sharma"
 title_separator          : "-"
 name                     : &name "Vishavdeep Sharma"
-description              : &description "Ph.D. Candidate in Agricultural, Environmental, and Development Economics"
+description              : &description "Ph.D. Candidate"
 url                      : https://vishavdeeps95.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "vishavdeeps95/vishavdeeps95.github.io"
