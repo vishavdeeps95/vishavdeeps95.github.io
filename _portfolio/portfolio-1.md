@@ -1,6 +1,5 @@
 ---
 title: "Foreign Investments in Ohio Farmland"
-excerpt: "Outreach Report co-authored with Rabail Chandio and Ani L. Katchova<br/><img src='/images/ohio_farmland.png'>"
 collection: portfolio
 ---
 
