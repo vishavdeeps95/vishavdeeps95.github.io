@@ -6,7 +6,6 @@ permalink: /publication/2020-wagners-law-india
 excerpt: 'Using India’s public expenditure data, this paper empirically tests Wagner’s Law with time-series methods and finds a positive elasticity of growth rate in expenditure to per-capita GDP.'
 date: 2020-12-01
 venue: 'JNU, Delhi – Public Finance Course Project'
-citation: 'Sharma, V. (2020). "Wagner’s Law: An Empirical Analysis with Reference to India." <i>Public Finance Course Project, JNU Delhi</i>, Fall 2020.'
 ---
 
 Using India’s **public expenditure data**, various time-series techniques were applied—such as regression analysis, unit root tests, cointegration techniques, and a vector error correction model.  
