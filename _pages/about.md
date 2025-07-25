@@ -1,10 +1,11 @@
 ---
 permalink: /
-title: "About Me: true
+title: "About Me": true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
 
 I am **Vishavdeep Sharma**, a Ph.D. Candidate in Department of Agricultural, Environmental, and Development Economics (AEDE) at **The Ohio State University**, specializing in Industrial Organization, and Applied Econometrics.  
 
