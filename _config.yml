@@ -26,12 +26,12 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : # URL
-  googlescholar    : citations?user=CA7NAo0AAAAJ&hl=en&oi=sra
+  googlescholar    : "https://scholar.google.com/citations?user=CA7NAo0AAAAJ&hl=en&oi=sra"
   impactstory      : # URL
-  orcid            : 0000-0002-7254-0597
+  orcid            : "https://orcid.org/0000-0002-7254-0597"
   semantic         : # URL
   pubmed           : # URL
-  researchgate     : profile/Vishavdeep-Sharma-2
+  researchgate     : "https://www.researchgate.net/profile/Vishavdeep-Sharma-2"
   scopus           : # URL
 
   # Repositories and software development
