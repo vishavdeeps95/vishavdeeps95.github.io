@@ -17,8 +17,11 @@ main:
   - title: "Outreach and Extension"
     url: /portfolio/
         
-  - title: "Blog Posts"
+  - title: "Conferences"
     url: /year-archive/
+
+  - title: "Miscelleneous"
+    url: /talks/
     
   - title: "CV"
     url: /cv/
