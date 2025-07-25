@@ -7,8 +7,6 @@ excerpt: 'This paper analyzes farmer suicides in India with specific reference t
 date: 2015-01-01
 venue: 'International Journal of Management Studies'
 paperurl: 'https://drive.google.com/file/d/10PgvWCtAsoJPDBS12s9uFgRGTQAZpd2_/view?usp=sharing'
-slidesurl: ''
-bibtexurl: ''
 citation: 'Janbandhu, I., Kurian, P. & <b>Sharma, V.</b> (2015). "Analysis on Farmer Suicides: A study with reference to the year 2015." <i>International Journal of Management Studies</i>, ISSN (Print), 2249-0302.'
 ---
 
