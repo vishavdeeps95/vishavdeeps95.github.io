@@ -70,6 +70,13 @@ author:
   zhihu            : # Username
 
 
+  collections:
+  conferences:
+    output: true
+    permalink: /conferences/:path/
+
+
+
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   books:
