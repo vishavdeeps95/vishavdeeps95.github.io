@@ -1,13 +1,17 @@
 ---
-title: "Paper Title Number 5, with math $$E=mc^2$$"
+title: "Wagner’s Law: An Empirical Analysis with Reference to India"
 collection: publications
 category: conferences
-permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'This paper is about a famous math equation, $$E=mc^2$$'
-date: 2024-02-17
-venue: 'GitHub Journal of Bugs'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
+permalink: /publication/2020-wagners-law-india
+excerpt: 'Using India’s public expenditure data, this paper empirically tests Wagner’s Law with time-series methods and finds a positive elasticity of growth rate in expenditure to per-capita GDP.'
+date: 2020-12-01
+venue: 'JNU, Delhi – Public Finance Course Project'
+citation: 'Sharma, V. (2020). "Wagner’s Law: An Empirical Analysis with Reference to India." <i>Public Finance Course Project, JNU Delhi</i>, Fall 2020.'
 ---
 
-Using [MathJax](https://www.mathjax.org/) in the description is supported - $$E=mc^2$$ - however, the use must be mindful that the default delimiters are `$$...$$` and `\\[...\\]` which differs from the `$...$` that is typically expected.
+Using India’s **public expenditure data**, various time-series techniques were applied—such as regression analysis, unit root tests, cointegration techniques, and a vector error correction model.  
+
+**Key result:**  
+The study shows a **positive elasticity** of growth rate in public expenditure to the first difference of per-capita GDP, with modifications to the theoretical model proposed by earlier researchers.
+
+This was completed as part of a **Public Finance course project** at **JNU, Delhi** during *Fall 2020*.
