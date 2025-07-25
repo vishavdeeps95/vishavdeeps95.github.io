@@ -1,6 +1,6 @@
 ---
 title: "Breaking Barriers: US Firms in Emerging Markets"
-excerpt: "Poster presentation at the Engaged Scholarship Symposium, The Ohio State University<br/><img src='/images/us_firms_poster.png'>"
+excerpt: "Poster presentation at the Engaged Scholarship Symposium <br/><img src='https://vishavdeeps95.github.io/images/poster-1.png'>"
 collection: portfolio
 ---
 
