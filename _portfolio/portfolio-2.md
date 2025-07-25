@@ -1,6 +1,6 @@
 ---
 title: "Breaking Barriers: US Firms in Emerging Markets"
-excerpt: "Poster presentation at the Engaged Scholarship Symposium <br/><img src='https://vishavdeeps95.github.io/images/poster-1.png'>"
+excerpt: "Poster presentation at the Engaged Scholarship Symposium <br/><img src='https://vishavdeeps95.github.io/images/poster-1.png' width='300'>"
 collection: portfolio
 ---
 
