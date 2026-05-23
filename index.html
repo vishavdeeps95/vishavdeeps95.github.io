@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishavdeep Sharma — Economics, The Ohio State University</title>
+<meta name="description" content="Vishavdeep Sharma — PhD candidate in Agricultural, Environmental, and Development Economics at The Ohio State University. Research in industrial organization, applied microeconomics, oligopoly theory, and development economics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ============================================================
+     DESIGN TOKENS  — edit colors/fonts here to restyle the whole site
+     ============================================================ */
+  :root{
+    --paper:#f6f2ec;       /* page background        */
+    --paper-2:#efe9e0;     /* soft panel background  */
+    --ink:#1b1d22;         /* main text              */
+    --muted:#6a655d;       /* secondary text         */
+    --line:#d9d2c6;        /* hairline borders       */
+    --accent:#7a2e2e;      /* oxblood accent         */
+    --accent-soft:#9a4242;
+    --max:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--paper);color:var(--ink);
+    font-family:'Hanken Grotesk',sans-serif;font-size:17px;line-height:1.65;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  body::before{ /* subtle paper grain */
+    content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background-image:radial-gradient(circle at 1px 1px, rgba(27,29,34,.025) 1px, transparent 0);
+    background-size:4px 4px;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+  h1,h2,h3{font-family:'Fraunces',serif;font-weight:500;line-height:1.1;letter-spacing:-.01em}
+
+  /* ===== NAV ===== */
+  nav{position:sticky;top:0;z-index:50;background:rgba(246,242,236,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .brand{font-family:'Fraunces',serif;font-size:1.18rem;font-weight:600;letter-spacing:-.01em}
+  .brand span{color:var(--accent)}
+  .navlinks{display:flex;gap:30px;list-style:none}
+  .navlinks a{font-size:.83rem;font-weight:500;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);position:relative;padding:4px 0;transition:color .25s}
+  .navlinks a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--accent);transition:width .3s ease}
+  .navlinks a:hover,.navlinks a.active{color:var(--ink)}
+  .navlinks a:hover::after,.navlinks a.active::after{width:100%}
+  .menu-btn{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--ink)}
+
+  /* ===== HERO ===== */
+  header{padding:90px 0 76px;border-bottom:1px solid var(--line)}
+  .hero{display:grid;grid-template-columns:1.5fr .9fr;gap:60px;align-items:center}
+  .eyebrow{font-size:.8rem;text-transform:uppercase;letter-spacing:.18em;color:var(--accent);font-weight:600;margin-bottom:22px}
+  .hero h1{font-size:clamp(2.6rem,6vw,4.2rem);margin-bottom:18px}
+  .hero .role{font-size:1.12rem;color:var(--muted);margin-bottom:6px;font-weight:500}
+  .hero .lede{font-size:1.1rem;color:var(--ink);max-width:48ch;margin:24px 0 32px;line-height:1.6}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:2px;font-size:.9rem;font-weight:600;border:1px solid var(--ink);transition:all .25s}
+  .btn.primary{background:var(--ink);color:var(--paper)}
+  .btn.primary:hover{background:var(--accent);border-color:var(--accent)}
+  .btn.ghost:hover{background:var(--ink);color:var(--paper)}
+
+  .portrait{aspect-ratio:4/5;border-radius:3px;overflow:hidden;position:relative;background:linear-gradient(135deg,var(--paper-2),#e3dccf);border:1px solid var(--line);box-shadow:18px 18px 0 -2px var(--paper-2),18px 18px 0 -1px var(--line)}
+  .portrait img{width:100%;height:100%;object-fit:cover;display:block}
+  .portrait .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;color:var(--muted);text-align:center;padding:20px}
+  .portrait .ph svg{width:46px;height:46px;opacity:.5}
+  .portrait .ph small{font-size:.75rem;letter-spacing:.05em}
+
+  /* ===== SECTIONS ===== */
+  section{padding:78px 0;border-bottom:1px solid var(--line)}
+  .sec-head{display:flex;align-items:baseline;gap:18px;margin-bottom:40px}
+  .sec-num{font-family:'Fraunces',serif;font-size:.95rem;color:var(--accent);font-weight:600}
+  .sec-head h2{font-size:clamp(1.8rem,3.5vw,2.5rem)}
+  .lead-text{font-size:1.16rem;line-height:1.7;max-width:64ch;color:var(--ink)}
+  .lead-text + p{margin-top:18px;color:var(--muted);max-width:64ch;line-height:1.7}
+
+  /* about: education + facts */
+  .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:54px;margin-top:36px}
+  .edu{list-style:none;display:flex;flex-direction:column}
+  .edu li{padding:16px 0;border-top:1px solid var(--line)}
+  .edu li:first-child{border-top:none;padding-top:0}
+  .edu .deg{font-weight:600;font-size:1rem}
+  .edu .school{color:var(--muted);font-size:.92rem}
+  .edu .yr{float:right;font-family:'Fraunces',serif;color:var(--accent);font-size:.9rem}
+  .facts h3{font-size:1.05rem;margin-bottom:14px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+  .chip{font-size:.82rem;font-weight:500;background:var(--paper-2);border:1px solid var(--line);padding:6px 13px;border-radius:2px}
+  .facts .award{font-size:.95rem;color:var(--muted);line-height:1.55}
+  .facts .award strong{color:var(--ink)}
+
+  /* research cards */
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .card{padding:26px;border:1px solid var(--line);border-radius:3px;background:rgba(255,255,255,.35);transition:transform .3s,box-shadow .3s,border-color .3s}
+  .card:hover{transform:translateY(-4px);box-shadow:0 14px 30px -18px rgba(27,29,34,.4);border-color:var(--accent-soft)}
+  .card .ic{font-family:'Fraunces',serif;color:var(--accent);font-size:1.4rem;margin-bottom:12px}
+  .card h3{font-size:1.16rem;margin-bottom:9px}
+  .card p{font-size:.95rem;color:var(--muted);line-height:1.6}
+
+  /* publications */
+  .subhead{font-family:'Fraunces',serif;font-size:1.1rem;color:var(--accent);font-weight:600;margin:8px 0 4px;letter-spacing:.02em}
+  .pub{display:grid;grid-template-columns:64px 1fr;gap:24px;padding:22px 0;border-top:1px solid var(--line)}
+  .pub:last-child{border-bottom:1px solid var(--line)}
+  .pub .year{font-family:'Fraunces',serif;font-size:1.35rem;color:var(--accent);font-weight:500}
+  .pub h3{font-size:1.1rem;margin-bottom:6px;line-height:1.35}
+  .pub .authors{font-size:.93rem;color:var(--muted);margin-bottom:3px}
+  .pub .venue{font-size:.92rem;font-style:italic;color:var(--ink)}
+  .pub .tags{margin-top:11px;display:flex;gap:9px;flex-wrap:wrap}
+  .pub .tags a{font-size:.76rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);border:1px solid var(--line);padding:4px 11px;border-radius:2px;transition:all .25s}
+  .pub .tags a:hover{background:var(--accent);color:var(--paper);border-color:var(--accent)}
+  .pub .badge{display:inline-block;font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin-bottom:6px}
+
+  /* rows (teaching / talks) */
+  .stack{display:flex;flex-direction:column;gap:0}
+  .row{display:grid;grid-template-columns:170px 1fr;gap:24px;padding:20px 0;border-top:1px solid var(--line)}
+  .row:first-child{border-top:none}
+  .row .when{font-size:.9rem;color:var(--muted);font-weight:600;padding-top:2px}
+  .row h3{font-size:1.08rem;margin-bottom:4px}
+  .row p{font-size:.93rem;color:var(--muted)}
+  .row .hl{color:var(--accent);font-weight:600}
+  .note{margin-top:24px;font-size:.95rem;color:var(--muted);max-width:64ch;line-height:1.65;border-left:2px solid var(--accent);padding-left:16px}
+
+  /* simple list (media) */
+  .medialist{columns:2;column-gap:42px;list-style:none;font-size:.93rem}
+  .medialist li{break-inside:avoid;padding:8px 0;border-bottom:1px solid var(--line);color:var(--muted)}
+  .medialist li b{color:var(--ink);font-weight:600}
+
+  /* contact */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .contact-grid .lead-text{margin-bottom:22px}
+  .links{list-style:none;display:flex;flex-direction:column;gap:2px}
+  .links li{border-top:1px solid var(--line)}
+  .links li:last-child{border-bottom:1px solid var(--line)}
+  .links a{display:flex;justify-content:space-between;align-items:center;padding:15px 4px;font-weight:500;transition:padding .25s,color .25s}
+  .links a:hover{padding-left:14px;color:var(--accent)}
+  .links a .arr{color:var(--accent);transition:transform .25s}
+  .links a:hover .arr{transform:translateX(5px)}
+
+  footer{padding:40px 0;text-align:center;color:var(--muted);font-size:.85rem}
+  footer .brand{font-size:1rem;display:block;margin-bottom:8px}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media(max-width:860px){
+    .hero{grid-template-columns:1fr;gap:38px}
+    .portrait{max-width:300px}
+    .grid{grid-template-columns:1fr}
+    .about-grid,.contact-grid{grid-template-columns:1fr;gap:34px}
+    .medialist{columns:1}
+    .row{grid-template-columns:1fr;gap:4px}
+    .row .when{padding-top:0}
+    .navlinks{position:fixed;inset:68px 0 auto 0;background:var(--paper);flex-direction:column;gap:0;padding:10px 32px 20px;border-bottom:1px solid var(--line);display:none}
+    .navlinks.open{display:flex}
+    .navlinks li{padding:12px 0;border-bottom:1px solid var(--line)}
+    .menu-btn{display:block}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<nav>
+  <div class="wrap">
+    <a href="#top" class="brand">Vishavdeep<span>.</span></a>
+    <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <ul class="navlinks" id="nav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#outreach">Outreach</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header id="top">
+  <div class="wrap">
+    <div class="hero">
+      <div class="reveal">
+        <p class="eyebrow">PhD Candidate · Economics</p>
+        <h1>Vishavdeep Sharma</h1>
+        <p class="role">Agricultural, Environmental &amp; Development Economics</p>
+        <p class="role">The Ohio State University</p>
+        <p class="lede">I study how firms compete and how markets are shaped by strategy, corruption, and shocks — combining oligopoly theory with applied microeconomics and development economics.</p>
+        <div class="cta-row">
+          <a href="assets/cv.pdf" class="btn primary" target="_blank" rel="noopener">Download CV ↓</a>
+          <a href="#contact" class="btn ghost">Get in touch</a>
+        </div>
+      </div>
+      <!-- PHOTO: drop a photo at assets/photo.jpg and replace the .ph block below with:
+           <img src="assets/photo.jpg" alt="Vishavdeep Sharma"> -->
+      <div class="portrait reveal">
+        <div class="ph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          <small>Add your photo at assets/photo.jpg</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap reveal">
+    <div class="sec-head"><span class="sec-num">01</span><h2>About</h2></div>
+    <p class="lead-text">I am a PhD candidate in the Department of Agricultural, Environmental, and Development Economics (AEDE) at The Ohio State University. My work lies at the intersection of industrial organization and applied microeconomics, with a focus on oligopoly theory, strategic firm behavior, and development economics.</p>
+    <p>I build game-theoretic models — and take them to data — to understand how firms compete, how bribery and corruption shape market entry in emerging economies, and how market structure responds to shocks such as natural disasters and antitrust enforcement. I currently serve as a Graduate Research Assistant at the John Glenn College of Public Affairs and at AEDE.</p>
+
+    <div class="about-grid">
+      <!-- EDUCATION -->
+      <div>
+        <ul class="edu">
+          <li><span class="yr">2022 – present</span><div class="deg">Ph.D., Agricultural, Environmental &amp; Development Economics</div><div class="school">The Ohio State University</div></li>
+          <li><span class="yr">2019 – 2021</span><div class="deg">M.Phil., Economics</div><div class="school">Jawaharlal Nehru University, Delhi</div></li>
+          <li><span class="yr">2016 – 2018</span><div class="deg">M.Sc., Economics</div><div class="school">Gokhale Institute of Politics and Economics, Pune</div></li>
+          <li><span class="yr">2013 – 2016</span><div class="deg">B.A. (Hons.), Economics</div><div class="school">University of Delhi</div></li>
+        </ul>
+      </div>
+      <!-- HONORS / SKILLS -->
+      <div class="facts">
+        <h3>Honors</h3>
+        <p class="award" style="margin-bottom:24px"><strong>Junior Research Fellowship (JRF)</strong>, UGC, India — awarded at the 99.78<sup>th</sup> percentile (2019).</p>
+        <h3>Technical Skills</h3>
+        <div class="chips">
+          <span class="chip">R</span><span class="chip">STATA</span><span class="chip">Python</span><span class="chip">MATLAB</span><span class="chip">LaTeX</span><span class="chip">MS Office</span>
+        </div>
+        <h3>Languages</h3>
+        <div class="chips">
+          <span class="chip">English — Advanced</span><span class="chip">Hindi — Native</span><span class="chip">Sanskrit — Intermediate</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH INTERESTS ============ -->
+<section id="research">
+  <div class="wrap reveal">
+    <div class="sec-head"><span class="sec-num">02</span><h2>Research Interests</h2></div>
+    <div class="grid">
+      <div class="card"><div class="ic">✦</div><h3>Industrial Organization</h3><p>Firm competition, market structure, and strategic interaction in oligopolistic markets.</p></div>
+      <div class="card"><div class="ic">✦</div><h3>Applied Microeconomics</h3><p>Bringing theory to data on entry, corruption, and the way markets respond to shocks.</p></div>
+      <div class="card"><div class="ic">✦</div><h3>Oligopoly Theory</h3><p>Price versus quantity competition and the economics of strategic bribery.</p></div>
+      <div class="card"><div class="ic">✦</div><h3>Development Economics</h3><p>Market entry, corruption, and firm behavior in emerging economies.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PUBLICATIONS ============
+     To add a paper: copy one <div class="pub">…</div> block and edit it.
+     Use the <span class="badge"> for status labels (e.g. Forthcoming). -->
+<section id="publications">
+  <div class="wrap reveal">
+    <div class="sec-head"><span class="sec-num">03</span><h2>Publications</h2></div>
+
+    <p class="subhead">Peer-Reviewed</p>
+    <div class="pub">
+      <div class="year">2025</div>
+      <div>
+        <span class="badge">Forthcoming · The Manchester School</span>
+        <h3>The Optimal Bribe: Price Versus Quantity Competition in Oligopolies</h3>
+        <p class="authors">Sharma, V. &amp; Dastidar, K. G.</p>
+        <p class="venue">The Manchester School (forthcoming)</p>
+      </div>
+    </div>
+
+    <p class="subhead" style="margin-top:34px">Working Papers</p>
+
+    <div class="pub">
+      <div class="year">2026</div>
+      <div>
+        <h3>When Does Antitrust Enforcement Discipline Common Ownership? A General Equilibrium Analysis</h3>
+        <p class="authors">Sharma, V.</p>
+        <p class="venue">Working paper</p>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="year">2026</div>
+      <div>
+        <h3>Strategic Bribery and Market Entry in Emerging Economies: Theory and Evidence</h3>
+        <p class="authors">Sharma, V.</p>
+        <p class="venue">Working paper</p>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="year">2026</div>
+      <div>
+        <h3>Natural Disaster and Market Structure: Theory and Evidence from Florida Hurricanes</h3>
+        <p class="authors">Sharma, V.</p>
+        <p class="venue">Working paper</p>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="year">2026</div>
+      <div>
+        <h3>The Role of Optimal Disaster Resilience and Recovery in Estimating Benefits of Climate Adaptation</h3>
+        <p class="authors">Rose, A., Sharma, V. &amp; Dormady, N.</p>
+        <p class="venue">Working paper</p>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="year">2025</div>
+      <div>
+        <h3>Baselines for Economic Resilience Measurement and Their Role in Distinguishing Resilience from Recovery</h3>
+        <p class="authors">Rose, A., Dormady, N., Kajitani, Y., Liu, H., Tatano, H., Watson, M. &amp; Sharma, V.</p>
+        <p class="venue">SSRN Working Paper 5925602</p>
+        <div class="tags"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5925602" target="_blank" rel="noopener">SSRN</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEACHING ============ -->
+<section id="teaching">
+  <div class="wrap reveal">
+    <div class="sec-head"><span class="sec-num">04</span><h2>Teaching</h2></div>
+    <div class="stack">
+      <div class="row">
+        <div class="when">Autumn 2024</div>
+        <div><h3>Statistics &amp; Econometrics — AEDECON 6110</h3><p>Graduate Teaching Assistant. Led R lab sessions, prepared selected lectures and homework. <span class="hl">SEI score: 4.9 / 5.</span></p></div>
+      </div>
+      <div class="row">
+        <div class="when">Autumn 2023</div>
+        <div><h3>Agricultural Finance — AEDECON 3103</h3><p>Graduate Teaching Assistant. Prepared lecture slides, graded, and delivered selected lectures.</p></div>
+      </div>
+      <div class="row">
+        <div class="when">Autumn 2022</div>
+        <div><h3>Graduate Teaching Assistant — AEDE</h3><p>Grading and evaluation of assignments and examinations.</p></div>
+      </div>
+    </div>
+    <p class="note">Earlier, I taught a wide range of undergraduate economics courses across colleges of the University of Delhi (2018–2022) — including Mathematical Methods for Economics, Statistics, and Intermediate Macroeconomics — at institutions such as Shri Ram College of Commerce, Kirorimal College, and Miranda House.</p>
+  </div>
+</section>
+
+<!-- ============ OUTREACH, TALKS & MEDIA ============ -->
+<section id="outreach">
+  <div class="wrap reveal">
+    <div class="sec-head"><span class="sec-num">05</span><h2>Talks, Outreach &amp; Media</h2></div>
+
+    <p class="subhead">Conferences &amp; Invited Talks</p>
+    <div class="stack" style="margin-bottom:34px">
+      <div class="row"><div class="when">Sep 2025</div><div><h3>IDRiM Society — 15th International Conference</h3><p>Samos Island, Greece (presented by coauthor).</p></div></div>
+      <div class="row"><div class="when">Sep 2025</div><div><h3>Invited Speaker — EconTricks Research Workshop</h3><p>SPM College for Women, University of Delhi.</p></div></div>
+      <div class="row"><div class="when">Jul 2024</div><div><h3>AAEA Annual Meeting</h3><p>Agricultural &amp; Applied Economics Association, Los Angeles, USA.</p></div></div>
+      <div class="row"><div class="when">Jan 2023</div><div><h3>Asian Meeting of the Econometric Society</h3><p>Mumbai, India.</p></div></div>
+      <div class="row"><div class="when">2021</div><div><h3>Winter School (DSE &amp; Econometric Society) · MEACONF</h3><p>Delhi, India · Amsterdam, Netherlands.</p></div></div>
+    </div>
+
+    <p class="subhead">Outreach &amp; Extension</p>
+    <p class="note" style="border-color:var(--line);margin-bottom:30px">Poster presentations at the CFAES Research Poster Competition (2025) and the Engaged Scholarship Symposium (2024), and a series of widely-circulated extension reports on <strong>Foreign Investments in Ohio Farmland</strong> with the Farm Income Enhancement Program.</p>
+
+    <p class="subhead">In the News</p>
+    <ul class="medialist">
+      <li><b>WTVG 13abc Action News</b> — Foreign-Owned Land in the U.S.</li>
+      <li><b>Mansfield News Journal</b> — Foreign ownership of Ohio farmland on the rise (2024)</li>
+      <li><b>Ohio's Country Journal</b> — A Look at Foreign Investment in Ohio Farmland (2024)</li>
+      <li><b>Morning AgClips</b> — Foreign Investors in Ohio Farmland (2024)</li>
+      <li><b>AAEA Blog</b> — Members in the News (2024)</li>
+      <li><b>Ohio Ag Manager</b> — Foreign Investments in Ohio Farmland (2024)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap reveal">
+    <div class="sec-head"><span class="sec-num">06</span><h2>Get in Touch</h2></div>
+    <div class="contact-grid">
+      <div>
+        <p class="lead-text">I welcome conversations about research, collaborations, talks, and mentorship. Email is the best way to reach me.</p>
+        <p style="color:var(--muted)">229 Agricultural Administration Building<br>2120 Fyffe Road, Columbus, OH 43210</p>
+      </div>
+      <ul class="links">
+        <li><a href="mailto:sharma.1094@osu.edu">sharma.1094@osu.edu <span class="arr">→</span></a></li>
+        <li><a href="https://aede.osu.edu/our-people/vishavdeep-sharma" target="_blank" rel="noopener">OSU AEDE Profile <span class="arr">→</span></a></li>
+        <!-- Add your Google Scholar URL below when ready -->
+        <li><a href="#" target="_blank" rel="noopener">Google Scholar <span class="arr">→</span></a></li>
+        <li><a href="https://www.youtube.com/@economicslearningcentre6333" target="_blank" rel="noopener">YouTube — Economics Learning Centre <span class="arr">→</span></a></li>
+        <li><a href="assets/cv.pdf" target="_blank" rel="noopener">Curriculum Vitae (PDF) <span class="arr">→</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="brand">Vishavdeep Sharma</span>
+    © 2026 · The Ohio State University · Last updated May 2026
+  </div>
+</footer>
+
+<script>
+  // scroll reveal
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  // active nav highlight
+  const secs=[...document.querySelectorAll('section[id], header[id]')];
+  const navA=[...document.querySelectorAll('.navlinks a')];
+  window.addEventListener('scroll',()=>{let cur='';secs.forEach(s=>{if(scrollY>=s.offsetTop-120)cur=s.id;});navA.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+cur));});
+  navA.forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+</script>
+</body>
+</html>
