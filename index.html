@@ -125,6 +125,13 @@
   .pub .tags a{font-size:.76rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);border:1px solid var(--line);padding:4px 11px;border-radius:2px;transition:all .25s}
   .pub .tags a:hover{background:var(--accent);color:var(--paper);border-color:var(--accent)}
   .pub .badge{display:inline-block;font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin-bottom:6px}
+  .pub details.abstract{margin-top:10px;font-size:.92rem}
+  .pub details.abstract summary{cursor:pointer;display:inline-flex;align-items:center;gap:6px;color:var(--accent);font-weight:500;list-style:none;transition:color .2s}
+  .pub details.abstract summary::-webkit-details-marker{display:none}
+  .pub details.abstract summary::before{content:"▸";font-size:.75em}
+  .pub details.abstract[open] summary::before{content:"▾"}
+  .pub details.abstract summary:hover{color:var(--accent-soft)}
+  .pub details.abstract p{margin:8px 0 0;padding-left:16px;color:var(--muted);line-height:1.65;max-width:64ch}
 
   /* rows (teaching / talks) */
   .stack{display:flex;flex-direction:column;gap:0}
@@ -276,6 +283,10 @@
         <h3>A Demand–Cost Pass-Through Identity</h3>
         <p class="venue">SSRN Working Paper (posted May 2026)</p>
         <div class="tags"><a href="https://dx.doi.org/10.2139/ssrn.6770864" target="_blank" rel="noopener">SSRN</a></div>
+        <details class="abstract">
+          <summary>Abstract</summary>
+          <p>This paper studies the link between cost and demand pass-through in oligopoly. When market size and the cost shifter both enter additively, market-size and marginal-cost shifts act as equivalent perturbations to the equilibrium markup, and the two pass-through rates sum to one. The identity holds in any symmetric oligopoly nested in the standard conduct-parameter framework, extends to asymmetric oligopoly in aggregated form, and is independent of conduct. I characterize the demand and cost specifications under which the identity holds and fails, and discuss when it can be invoked as a working restriction or used as a diagnostic in applied work.</p>
+        </details>
       </div>
     </div>
 
