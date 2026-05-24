@@ -98,6 +98,8 @@
   .chip{font-size:.82rem;font-weight:500;background:var(--paper-2);border:1px solid var(--line);padding:6px 13px;border-radius:2px}
   .facts .award{font-size:.95rem;color:var(--muted);line-height:1.55}
   .facts .award strong{color:var(--ink)}
+  .facts .award a{color:var(--accent);text-decoration:underline;text-underline-offset:2px;transition:color .2s}
+  .facts .award a:hover{color:var(--accent-soft)}
 
   /* research cards */
   .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
@@ -116,6 +118,8 @@
   .pub h3 a{color:var(--accent);text-decoration:underline;text-underline-offset:2px;transition:color .2s}
   .pub h3 a:hover{color:var(--accent-soft)}
   .pub .authors{font-size:.93rem;color:var(--muted);margin-bottom:3px}
+  .pub .authors a{color:var(--accent);text-decoration:underline;text-underline-offset:2px;transition:color .2s}
+  .pub .authors a:hover{color:var(--accent-soft)}
   .pub .venue{font-size:.92rem;font-style:italic;color:var(--ink)}
   .pub .tags{margin-top:11px;display:flex;gap:9px;flex-wrap:wrap}
   .pub .tags a{font-size:.76rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);border:1px solid var(--line);padding:4px 11px;border-radius:2px;transition:all .25s}
@@ -235,7 +239,7 @@
       <!-- HONORS / SKILLS -->
       <div class="facts">
         <h3>Honors</h3>
-        <p class="award" style="margin-bottom:24px"><strong>Junior Research Fellowship (JRF)</strong>, UGC, India — awarded at the 99.78<sup>th</sup> percentile (2019).</p>
+        <p class="award" style="margin-bottom:24px"><strong>Junior Research Fellowship (JRF)</strong>, UGC, India — <a href="https://drive.google.com/file/d/1GstIM0OlO_bdDtV43VpioO9cEnPpfDZ6/view?usp=sharing" target="_blank" rel="noopener">awarded</a> at the <a href="https://drive.google.com/file/d/1GoxmjvLKzlBHU06iRJFYcUM30aNGaGOM/view?usp=sharing" target="_blank" rel="noopener">99.78</a><sup>th</sup> percentile (2019).</p>
         <h3>Technical Skills</h3>
         <div class="chips">
           <span class="chip">R</span><span class="chip">STATA</span><span class="chip">Python</span><span class="chip">MATLAB</span><span class="chip">LaTeX</span><span class="chip">MS Office</span>
@@ -275,7 +279,7 @@
       <div>
         <span class="badge">Forthcoming · The Manchester School</span>
         <h3>The Optimal Bribe: Price Versus Quantity Competition in Oligopolies</h3>
-        <p class="authors">Sharma, V. &amp; Dastidar, K. G.</p>
+        <p class="authors" style="font-style:italic">with <a href="https://ideas.repec.org/f/pda365.html" target="_blank" rel="noopener">Krishnendu Ghosh Dastidar</a></p>
         <p class="venue">The Manchester School (forthcoming)</p>
       </div>
     </div>
@@ -286,7 +290,6 @@
       <div class="year">2026</div>
       <div>
         <h3>A Demand–Cost Pass-Through Identity</h3>
-        <p class="authors">Sharma, V.</p>
         <p class="venue">SSRN Working Paper (posted May 2026)</p>
         <div class="tags"><a href="https://dx.doi.org/10.2139/ssrn.6770864" target="_blank" rel="noopener">SSRN</a></div>
       </div>
@@ -296,7 +299,6 @@
       <div class="year">2026</div>
       <div>
         <h3>When Does Antitrust Enforcement Discipline Common Ownership? A General Equilibrium Analysis</h3>
-        <p class="authors">Sharma, V.</p>
         <p class="venue">Working paper</p>
       </div>
     </div>
@@ -305,7 +307,6 @@
       <div class="year">2026</div>
       <div>
         <h3>Strategic Bribery and Market Entry in Emerging Economies: Theory and Evidence</h3>
-        <p class="authors">Sharma, V.</p>
         <p class="venue">Working paper</p>
       </div>
     </div>
@@ -314,7 +315,6 @@
       <div class="year">2026</div>
       <div>
         <h3>Natural Disaster and Market Structure: Theory and Evidence from Florida Hurricanes</h3>
-        <p class="authors">Sharma, V.</p>
         <p class="venue">Working paper</p>
       </div>
     </div>
@@ -323,7 +323,7 @@
       <div class="year">2026</div>
       <div>
         <h3>The Role of Optimal Disaster Resilience and Recovery in Estimating Benefits of Climate Adaptation</h3>
-        <p class="authors">Rose, A., Sharma, V. &amp; Dormady, N.</p>
+        <p class="authors" style="font-style:italic">with <a href="https://priceschool.usc.edu/faculty/directory/adam-rose/" target="_blank" rel="noopener">Adam Rose</a> and <a href="https://glenn.osu.edu/noah-dormady" target="_blank" rel="noopener">Noah Dormady</a></p>
         <p class="venue">Working paper</p>
       </div>
     </div>
@@ -332,7 +332,7 @@
       <div class="year">2025</div>
       <div>
         <h3>Baselines for Economic Resilience Measurement and Their Role in Distinguishing Resilience from Recovery</h3>
-        <p class="authors">Rose, A., Dormady, N., Kajitani, Y., Liu, H., Tatano, H., Watson, M. &amp; Sharma, V.</p>
+        <p class="authors" style="font-style:italic">with <a href="https://priceschool.usc.edu/faculty/directory/adam-rose/" target="_blank" rel="noopener">Adam Rose</a>, <a href="https://glenn.osu.edu/noah-dormady" target="_blank" rel="noopener">Noah Dormady</a>, <a href="https://researchmap.jp/ykajitani?lang=en" target="_blank" rel="noopener">Yoshio Kajitani</a>, <a href="https://faculty.scut.edu.cn/gggl/lh29_en/main.htm" target="_blank" rel="noopener">Huan Liu</a>, <a href="https://kdb.iimc.kyoto-u.ac.jp/profile/en.9914d262dfc1c7a7.html" target="_blank" rel="noopener">Hirokazu Tatano</a>, and <a href="https://dcp.ufl.edu/faculties/maria-watson/" target="_blank" rel="noopener">Maria Watson</a></p>
         <p class="venue">SSRN Working Paper 5925602</p>
         <div class="tags"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5925602" target="_blank" rel="noopener">SSRN</a></div>
       </div>
@@ -383,7 +383,7 @@
       <div class="year">2025</div>
       <div>
         <h3><a href="https://go.osu.edu/cfaesposters2025" target="_blank" rel="noopener">Strategic Bribery and Market Entry in Emerging Economies: A Game-Theoretic Analysis</a></h3>
-        <p class="authors"><b>Sharma, V.</b> &amp; Sheldon, I.</p>
+        <p class="authors" style="font-style:italic">with <a href="https://aede.osu.edu/our-people/ian-sheldon" target="_blank" rel="noopener">Ian Sheldon</a></p>
         <p class="venue">Poster, CFAES Research Poster Competition, The Ohio State University.</p>
       </div>
     </div>
@@ -392,7 +392,7 @@
       <div class="year">2024</div>
       <div>
         <h3><a href="https://kb.osu.edu/items/414ee0b7-0f29-467f-ae3f-f6b33869eecb" target="_blank" rel="noopener">Breaking Barriers: US Firms in Emerging Markets</a></h3>
-        <p class="authors"><b>Sharma, V.</b> &amp; Sheldon, I.</p>
+        <p class="authors" style="font-style:italic">with <a href="https://aede.osu.edu/our-people/ian-sheldon" target="_blank" rel="noopener">Ian Sheldon</a></p>
         <p class="venue">Poster, Engaged Scholarship Symposium, The Ohio State University.</p>
       </div>
     </div>
@@ -401,7 +401,7 @@
       <div class="year">2024</div>
       <div>
         <h3><a href="https://aede.osu.edu/sites/aede/files/publication_files/ForeignInvestmentsinOhioFarmland2024.pdf" target="_blank" rel="noopener">Foreign Investments in Ohio Farmland</a></h3>
-        <p class="authors"><b>Sharma, V.</b>, Chandio, R. &amp; Katchova, A.</p>
+        <p class="authors" style="font-style:italic">with Rabail Chandio and <a href="https://aede.osu.edu/our-people/ani-katchova" target="_blank" rel="noopener">Ani Katchova</a></p>
         <p class="venue">Dept. of Agricultural, Environmental, and Development Economics, CFAES, The Ohio State University.</p>
       </div>
     </div>
@@ -410,7 +410,7 @@
       <div class="year">2024</div>
       <div>
         <h3><a href="https://aede.osu.edu/about-us/publications/preserving-ohio-farms-and-ohio-farmlands" target="_blank" rel="noopener">Preserving Ohio Farms and Ohio Farmlands</a></h3>
-        <p class="authors">Katchova, A., Fang, X., Ju, R., Sun, Z. &amp; <b>Sharma, V.</b></p>
+        <p class="authors" style="font-style:italic">with <a href="https://aede.osu.edu/our-people/ani-katchova" target="_blank" rel="noopener">Ani Katchova</a>, Xiaoyi Fang, <a href="https://sites.google.com/view/raeju" target="_blank" rel="noopener">Rae Ju</a>, and <a href="https://sites.google.com/view/zhiningsun" target="_blank" rel="noopener">Zhining Sun</a></p>
         <p class="venue">Presentation at the Farm Income Enhancement Program.</p>
       </div>
     </div>
