@@ -65,7 +65,11 @@
   .eyebrow{font-size:.8rem;text-transform:uppercase;letter-spacing:.18em;color:var(--accent);font-weight:600;margin-bottom:22px}
   .hero h1{font-size:clamp(2.6rem,6vw,4.2rem);margin-bottom:18px}
   .hero .role{font-size:1.12rem;color:var(--muted);margin-bottom:6px;font-weight:500}
-  .hero .lede{font-size:1.1rem;color:var(--ink);max-width:48ch;margin:24px 0 32px;line-height:1.6}
+  .hero .lede{font-size:1.1rem;color:var(--ink);max-width:48ch;margin:24px 0 18px;line-height:1.6}
+  .hero .hero-bio{font-size:1rem;color:var(--muted);max-width:58ch;line-height:1.65;margin:0 0 14px}
+  .hero .hero-bio:last-of-type{margin-bottom:32px}
+  .hero .hero-bio a{color:var(--accent);transition:color .2s}
+  .hero .hero-bio a:hover{color:var(--accent-soft)}
   .cta-row{display:flex;gap:14px;flex-wrap:wrap}
   .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:2px;font-size:.9rem;font-weight:600;border:1px solid var(--ink);transition:all .25s}
   .btn.primary{background:var(--ink);color:var(--paper)}
@@ -87,7 +91,6 @@
   .lead-text a,.lead-text ~ p a{color:var(--accent);text-decoration:none;transition:color .2s}
   .lead-text a:hover,.lead-text ~ p a:hover{color:var(--accent-soft)}
   .lead-text + p{margin-top:18px;color:var(--muted);max-width:64ch;line-height:1.7}
-  #about .lead-text,#about .lead-text + p{max-width:none;text-align:justify}
 
   /* about: education + facts */
   .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:54px;margin-top:36px}
@@ -201,7 +204,6 @@
     <a href="#top" class="brand">Vishavdeep<span>.</span></a>
     <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
     <ul class="navlinks" id="nav">
-      <li><a href="#about">About</a></li>
       <li><a href="#research">Research</a></li>
       <li><a href="#teaching">Teaching</a></li>
       <li><a href="#conferences">Conferences</a></li>
@@ -221,6 +223,8 @@
         <h1>Vishavdeep Sharma</h1>
         <p class="role">The Ohio State University</p>
         <p class="lede">Hello and welcome! Thank you for visiting.</p>
+        <p class="hero-bio">I study firms and industry, how competition or strategic interactions affect economic outcomes, combining oligopoly theory with applied microeconomics. I currently serve as a Graduate Research Assistant jointly at the John Glenn College of Public Affairs and AEDE.</p>
+        <p class="hero-bio">Outside of research, I play outdoor sports — volleyball, cricket, tennis, badminton, and table tennis — and was named <a href="https://drive.google.com/file/d/1Gv3T3akMSvFa9WFbGvNdwGkmbNq-9oCK/view?usp=sharing" target="_blank" rel="noopener">Sportsman of the Year</a> during my master's.</p>
         <div class="cta-row">
           <a href="https://github.com/vishavdeeps95/vishavdeep_cv-main-/raw/pdf/cv.pdf" class="btn primary" target="_blank" rel="noopener">Download CV ↓</a>
           <a href="#contact" class="btn ghost">Get in touch</a>
@@ -235,46 +239,12 @@
   </div>
 </header>
 
-<!-- ============ ABOUT ============ -->
-<section id="about">
-  <div class="wrap reveal">
-    <div class="sec-head"><span class="sec-num">01</span><h2>About</h2></div>
-    <p class="lead-text">I am a PhD candidate in the Department of Agricultural, Environmental, and Development Economics (AEDE) at The Ohio State University. I study firms and industry, how competition or strategic interactions affect economic outcomes, combining oligopoly theory with applied microeconomics. I currently serve as a Graduate Research Assistant jointly at the John Glenn College of Public Affairs and AEDE.</p>
-    <p>Outside of research, I play outdoor sports — volleyball, cricket, tennis, badminton, and table tennis — and was named <a href="https://drive.google.com/file/d/1Gv3T3akMSvFa9WFbGvNdwGkmbNq-9oCK/view?usp=sharing" target="_blank" rel="noopener">Sportsman of the Year</a> during my master's.</p>
-
-    <div class="about-grid">
-      <!-- EDUCATION -->
-      <div>
-        <ul class="edu">
-          <li><span class="yr">2022 – present</span><div class="deg">Ph.D., Agricultural, Environmental &amp; Development Economics</div><div class="school">The Ohio State University</div></li>
-          <li><span class="yr">2019 – 2021</span><div class="deg">M.Phil., Economics</div><div class="school">Jawaharlal Nehru University, Delhi</div></li>
-          <li><span class="yr">2016 – 2018</span><div class="deg">M.Sc., Economics</div><div class="school">Gokhale Institute of Politics and Economics, Pune</div></li>
-          <li><span class="yr">2013 – 2016</span><div class="deg">B.A. (Hons.), Economics</div><div class="school">University of Delhi</div></li>
-        </ul>
-      </div>
-      <!-- HONORS / SKILLS -->
-      <div class="facts">
-        <h3>Honors</h3>
-        <p class="award" style="margin-bottom:24px"><strong>Junior Research Fellowship (JRF)</strong>, UGC, India — <a href="https://drive.google.com/file/d/1GstIM0OlO_bdDtV43VpioO9cEnPpfDZ6/view?usp=sharing" target="_blank" rel="noopener">awarded</a> at the <a href="https://drive.google.com/file/d/1GoxmjvLKzlBHU06iRJFYcUM30aNGaGOM/view?usp=sharing" target="_blank" rel="noopener">99.78</a><sup>th</sup> percentile (2019).</p>
-        <h3>Technical Skills</h3>
-        <div class="chips">
-          <span class="chip">R</span><span class="chip">STATA</span><span class="chip">Python</span><span class="chip">MATLAB</span><span class="chip">LaTeX</span><span class="chip">MS Office</span>
-        </div>
-        <h3>Languages</h3>
-        <div class="chips">
-          <span class="chip">English — Advanced</span><span class="chip">Hindi — Native</span><span class="chip">Sanskrit — Intermediate</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ============ RESEARCH ============
      To add a paper: copy one <div class="pub">…</div> block and edit it.
      Use the <span class="badge"> for status labels (e.g. Forthcoming). -->
 <section id="research">
   <div class="wrap reveal">
-    <div class="sec-head"><span class="sec-num">02</span><h2>Research</h2></div>
+    <div class="sec-head"><span class="sec-num">01</span><h2>Research</h2></div>
 
     <p class="subhead">Research Interests</p>
     <div class="chips">
@@ -370,7 +340,7 @@
 <!-- ============ TEACHING ============ -->
 <section id="teaching">
   <div class="wrap reveal">
-    <div class="sec-head"><span class="sec-num">03</span><h2>Teaching</h2></div>
+    <div class="sec-head"><span class="sec-num">02</span><h2>Teaching</h2></div>
     <div class="stack">
       <div class="row">
         <div class="when">Autumn 2024</div>
@@ -392,7 +362,7 @@
 <!-- ============ CONFERENCES & INVITED TALKS ============ -->
 <section id="conferences">
   <div class="wrap reveal">
-    <div class="sec-head"><span class="sec-num">04</span><h2>Conferences &amp; Invited Talks</h2></div>
+    <div class="sec-head"><span class="sec-num">03</span><h2>Conferences &amp; Invited Talks</h2></div>
     <div class="stack">
       <div class="row"><div class="when">Sep 2025</div><div><h3>IDRiM Society — 15th International Conference</h3><p>Samos Island, Greece (presented by coauthor).</p></div></div>
       <div class="row"><div class="when">Sep 2025</div><div><h3>Invited Speaker — EconTricks Research Workshop</h3><p>SPM College for Women, University of Delhi.</p></div></div>
@@ -407,7 +377,7 @@
 <!-- ============ OUTREACH & MEDIA ============ -->
 <section id="outreach">
   <div class="wrap reveal">
-    <div class="sec-head"><span class="sec-num">05</span><h2>Outreach &amp; Extension</h2></div>
+    <div class="sec-head"><span class="sec-num">04</span><h2>Outreach &amp; Extension</h2></div>
 
     <p class="subhead">Posters, Reports &amp; Presentations</p>
 
@@ -465,7 +435,7 @@
 <!-- ============ LEADERSHIP & SERVICE ============ -->
 <section id="service">
   <div class="wrap reveal">
-    <div class="sec-head"><span class="sec-num">06</span><h2>Leadership &amp; Service</h2></div>
+    <div class="sec-head"><span class="sec-num">05</span><h2>Leadership &amp; Service</h2></div>
     <div class="stack">
       <div class="row">
         <div class="when">Since Jul 2018</div>
@@ -482,7 +452,7 @@
 <!-- ============ CONTACT ============ -->
 <section id="contact">
   <div class="wrap reveal">
-    <div class="sec-head"><span class="sec-num">07</span><h2>Get in Touch</h2></div>
+    <div class="sec-head"><span class="sec-num">06</span><h2>Get in Touch</h2></div>
     <div class="contact-grid">
       <div>
         <p class="lead-text">I welcome conversations about research, collaborations, talks, and mentorship. Email is the best way to reach me.</p>
