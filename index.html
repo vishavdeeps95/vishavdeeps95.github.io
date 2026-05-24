@@ -129,13 +129,14 @@
   .pub .tags a{font-size:.76rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);border:1px solid var(--line);padding:4px 11px;border-radius:2px;transition:all .25s}
   .pub .tags a:hover{background:var(--accent);color:var(--paper);border-color:var(--accent)}
   .pub .badge{display:inline-block;font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin-bottom:6px}
-  .pub details.abstract{margin-top:10px;font-size:.92rem}
-  .pub details.abstract summary{cursor:pointer;display:inline-flex;align-items:center;gap:6px;color:var(--accent);font-weight:500;list-style:none;transition:color .2s}
+  .pub details.abstract{margin-top:10px;font-size:.92rem;padding:0}
+  .pub details.abstract summary{cursor:pointer;display:inline-flex;align-items:center;gap:6px;color:var(--accent);font-weight:500;list-style:none;transition:color .2s;padding:0;margin:0}
   .pub details.abstract summary::-webkit-details-marker{display:none}
+  .pub details.abstract summary::marker{content:""}
   .pub details.abstract summary::before{content:"▸";font-size:.75em}
   .pub details.abstract[open] summary::before{content:"▾"}
   .pub details.abstract summary:hover{color:var(--accent-soft)}
-  .pub details.abstract p{margin:8px 0 0;padding-left:16px;color:var(--muted);line-height:1.65;max-width:64ch}
+  .pub details.abstract p{margin:8px 0 0;padding:0;color:var(--muted);line-height:1.65;max-width:64ch}
 
   /* rows (teaching / talks) */
   .stack{display:flex;flex-direction:column;gap:0}
