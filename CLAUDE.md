@@ -57,6 +57,13 @@ place. Keep the surrounding HTML structure intact.
 Replace `assets/cv.pdf` with the new file (keep the same name) — every
 "Download CV" link already points to it.
 
+## Footer "Last updated" rule
+Every time you edit this website and commit a change, also update the
+"Last updated <Month Year>" line in the footer of `index.html` to the current
+month and year (based on today's date). Include this update in the same commit
+as your other changes. If the footer already shows the current month and year,
+no edit is needed.
+
 ## Hard rules — accuracy
 - This is a real person's academic record. **Never invent publications, venues,
   awards, dates, or coauthors.** Only add or change facts the user explicitly
