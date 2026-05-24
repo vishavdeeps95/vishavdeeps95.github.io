@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <style>
   /* ============================================================
      DESIGN TOKENS  — edit colors/fonts here to restyle the whole site
@@ -166,6 +167,8 @@
   .links a:hover{padding-left:14px;color:var(--accent)}
   .links a .arr{color:var(--accent);transition:transform .25s}
   .links a:hover .arr{transform:translateX(5px)}
+  .links a .label{display:inline-flex;align-items:center;gap:12px}
+  .links a .label i{color:var(--accent);width:1.1em;font-size:.95em;text-align:center}
 
   footer{padding:40px 0;text-align:center;color:var(--muted);font-size:.85rem}
   footer .brand{font-size:1rem;display:block;margin-bottom:8px}
@@ -465,12 +468,12 @@
         <p style="color:var(--muted)">342 Agricultural Administration Building<br>2120 Fyffe Road, Columbus, OH 43210</p>
       </div>
       <ul class="links">
-        <li><a href="mailto:sharma.1094@osu.edu">sharma.1094@osu.edu <span class="arr">→</span></a></li>
-        <li><a href="https://cfaes.osu.edu/person/vishavdeep-sharma" target="_blank" rel="noopener">OSU Profile <span class="arr">→</span></a></li>
-        <li><a href="https://www.linkedin.com/in/vishavdeep-sharma-6053b495" target="_blank" rel="noopener">LinkedIn <span class="arr">→</span></a></li>
-        <li><a href="https://scholar.google.com/citations?user=CA7NAo0AAAAJ" target="_blank" rel="noopener">Google Scholar <span class="arr">→</span></a></li>
-        <li><a href="https://youtu.be/IZVe7UFxBY8?si=ylXQWY29rl0gNF07" target="_blank" rel="noopener">YouTube — Economics Learning Centre <span class="arr">→</span></a></li>
-        <li><a href="https://github.com/vishavdeeps95/vishavdeep_cv-main-/raw/pdf/cv.pdf" target="_blank" rel="noopener">Curriculum Vitae (PDF) <span class="arr">→</span></a></li>
+        <li><a href="mailto:sharma.1094@osu.edu"><span class="label"><i class="fa-solid fa-envelope" aria-hidden="true"></i>sharma.1094@osu.edu</span><span class="arr">→</span></a></li>
+        <li><a href="https://cfaes.osu.edu/person/vishavdeep-sharma" target="_blank" rel="noopener"><span class="label"><i class="fa-solid fa-building-columns" aria-hidden="true"></i>OSU Profile</span><span class="arr">→</span></a></li>
+        <li><a href="https://www.linkedin.com/in/vishavdeep-sharma-6053b495" target="_blank" rel="noopener"><span class="label"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn</span><span class="arr">→</span></a></li>
+        <li><a href="https://scholar.google.com/citations?user=CA7NAo0AAAAJ" target="_blank" rel="noopener"><span class="label"><i class="fa-brands fa-google-scholar" aria-hidden="true"></i>Google Scholar</span><span class="arr">→</span></a></li>
+        <li><a href="https://youtu.be/IZVe7UFxBY8?si=ylXQWY29rl0gNF07" target="_blank" rel="noopener"><span class="label"><i class="fa-brands fa-youtube" aria-hidden="true"></i>YouTube — Economics Learning Centre</span><span class="arr">→</span></a></li>
+        <li><a href="https://github.com/vishavdeeps95/vishavdeep_cv-main-/raw/pdf/cv.pdf" target="_blank" rel="noopener"><span class="label"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Curriculum Vitae (PDF)</span><span class="arr">→</span></a></li>
       </ul>
     </div>
   </div>
