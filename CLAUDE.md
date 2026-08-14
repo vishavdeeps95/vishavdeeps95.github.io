@@ -54,8 +54,20 @@ place. Keep the surrounding HTML structure intact.
    `<img src="assets/photo.jpg" alt="Vishavdeep Sharma">`
 
 ## Updating the CV
-Replace `assets/cv.pdf` with the new file (keep the same name) — every
-"Download CV" link already points to it.
+Replace `assets/cv.pdf` with the new file (keep the same name) — the hero "CV"
+button already points to it.
+
+The canonical CV lives in a separate repo (`vishavdeeps95/vishavdeep_cv-main-`,
+branch `pdf`). `assets/cv.pdf` is a **copy** of it, so it must be refreshed
+whenever that CV changes:
+```
+curl -L -o assets/cv.pdf \
+  https://github.com/vishavdeeps95/vishavdeep_cv-main-/raw/pdf/cv.pdf
+```
+Do not point links at that `raw` URL directly — `raw.githubusercontent.com`
+serves PDFs as `application/octet-stream`, which forces a download instead of
+opening the file in the browser. Serving from `assets/` sends
+`application/pdf`, so the PDF renders inline.
 
 ## Footer "Last updated" rule
 Every time you edit this website and commit a change, also update the
